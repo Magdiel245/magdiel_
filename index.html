@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Nobia</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            background-color: pink;
+            
+            
+        }
+    </style>
+    <script>
+        function accionParaCuandoEllaDigaQueNo(){
+            alert('Ya sabia que no se bañaba cochina <3');
+            alert('igual a si de cochina me gustas😍💟');
+            alert('I love you💞💏');
+            alert('ahora una musica que te identifica mailob💕')
+            location.href = 'https://youtu.be/oupft13Cms8'
+        }
+
+        function mueveElBoton(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnSi').style.position = "absolute";
+            document.getElementById('btnSi').style.left = newWidth + "px";
+            document.getElementById('btnSi').style.top = newHeight + "px";
+
+
+        }
+    </script>
+</head>
+<body>
+    <h3>Usted se baña?</h3>
+    <input type="button" onclick="accionParaCuandoEllaDigaQueNo()" id="btnNo" value="No" />
+    <input type="button" id="btnSi" onmouseover="mueveElBoton()" value="Si" />
+
+</body>
+</html>
